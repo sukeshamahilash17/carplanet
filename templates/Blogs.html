@@ -1,0 +1,335 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="{% static 'images/carlogo.jpg' %}">
+    <title>Blogs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.2/font/bootstrap-icons.min.css"  rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .blog-header {
+            
+            background: url("{% static 'images/car6.jpg' %}") no-repeat center center;
+            background-size: cover;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        .blog-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .breadcrumb {
+            font-size: 1rem;
+            color: #ddd;
+        }
+
+        .breadcrumb a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .breadcrumb a:hover {
+            color: #ff15fb;
+        }
+
+        .breadcrumb span {
+            color: #ff5656;
+        }
+
+        .footer-bottom p {
+            margin-left: 95px;
+        }
+
+        .breadcrumb {
+            position: relative;
+            left: 455px;
+        }
+    </style>
+
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="{% static 'images/carlogo.jpg' %}" alt="Logo" width="100" height="60">
+                <span class="logo-text">planet</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+           
+    </nav>
+
+    <section class="blog-header">
+        <div class="container">
+            <h1 style="color: red;">Our Blog & News</h1>
+        
+        </div>
+    </section>
+
+
+    <section class="container my-5">
+        <h1 class="text-center" style="color: #000000;">Cental <span class="text-danger">Blog & News</span></h1>
+        <p class="text-center" style="font-family: cursive;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Etiam nec lorem nec ligula
+            scelerisque
+            aliquam a at urna.</p>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card blog-card">
+                    <img src="{% static 'images/mclaren.jpg'%}" alt="Car Image 1">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="badge badge-danger" style="color: #ff0000;">30 Dec 2022</span>
+                            <span><i class="fas fa-user"></i> Matrick &nbsp; | &nbsp; <i class="fas fa-comments"></i> 6
+                                Comments</span>
+                        </div>
+                        <h5>Rental Cars how to check driving fines?</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis tortor eget dui
+                            aliquet.</p>
+                        <a href="#" class="btn btn-link text-danger">Read More<i
+                                class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card blog-card">
+                    <img src="{% static 'images/pixels.jpeg'%}" alt="Car Image 2">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="badge badge-danger" style="color: #ff0000;">28 Dec 2022</span>
+                            <span><i class="fas fa-user"></i> Matrick &nbsp; | &nbsp; <i class="fas fa-comments"></i> 4
+                                Comments</span>
+                        </div>
+                        <h5>Rental cost of sport and other cars</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis tortor eget dui
+                            aliquet.</p>
+                        <a href="#" class="btn btn-link text-danger">Read More<i
+                                class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card blog-card">
+                    <img src="{%static 'images/zenvo.jpg'%}" alt="Car Image 3">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="badge badge-danger" style="color: #ff0000;">27 Dec 2022</span>
+                            <span><i class="fas fa-user"></i> Matrick &nbsp; | &nbsp; <i class="fas fa-comments"></i> 3
+                                Comments</span>
+                        </div>
+                        <h5>Document required for car rental</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis tortor eget dui
+                            aliquet.</p>
+                        <a href="#" class="btn btn-link text-danger">Read More<i
+                                class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="counter-section text-center py-5" style="margin-top: 40px;">
+        <div class="containerpp">
+            <div class="row">
+
+                <div class="col-md-3">
+                    <div class="counter-icon mb-3">
+                        <i class="bi bi-hand-thumbs-up"></i>
+                    </div>
+                    <h2 class="counter" data-target="829">467</h2>
+                    <p style="font-weight: bolder;">Happy Clients</p>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="counter-icon mb-3">
+                        <i class="bi bi-car-front"></i>
+                    </div>
+                    <h2 class="counter" data-target="56">17</h2>
+                    <p style="font-weight: bolder;">Number of Cars</p>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="counter-icon mb-3">
+                        <i class="bi bi-building"></i>
+                    </div>
+                    <h2 class="counter" data-target="127">902</h2>
+                    <p style="font-weight: bolder;">Car Center</p>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="counter-icon mb-3">
+                        <i class="bi bi-speedometer"></i>
+                    </div>
+                    <h2 class="counter" data-target="589">675</h2>
+                    <p style="font-weight: bolder;">Total Kilometers</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="rental-banner" style="margin-top: 100px;">
+        <div class="container">
+            <h3>Interested in Renting?</h3>
+            <h1 style="color: rgb(255, 255, 255);">Rent Your Car</h1>
+
+            <p>Don't hesitate and send us a message.</p>
+
+            <div class="d-flex justify-content-center mt-4">
+                <a href="https://web.whatsapp.com/" class="btn btn-primary">WhatsApp</a>
+                <a href="./Contacts.html" class="btn btn-danger" style="margin-top: 50px;">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer style="margin-top: 100px;">
+        <div class="footer-container">
+
+            <div class="footer-section about-us">
+                <h3>About Us</h3>
+                <p>Dolor amet sit justo amet elitr clita ipsum elitr est. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit.</p>
+                <div class="subscribe-box">
+                    <input type="email" placeholder="Enter your email">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+
+
+            <div class="footer-section quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="./About.html">About</a></li>
+                    <li><a href="./Car features.html">Cars</a></li>
+                    <li><a href="./Car features.html">Car Types</a></li>
+                    <li><a href="./Our team.html">Team</a></li>
+                    <li><a href="./Contacts.html">Contact us</a></li>
+                    <li><a href="./Our team.html">Terms&Conditions</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-section business-hours">
+                <h3>Business Hours</h3>
+                <p>Mon - Friday: 09.00 am to 07.00 pm</p>
+                <p>Saturday: 10.00 am to 05.00 pm</p>
+                <p>Vacation: All Sunday is our vacation</p>
+            </div>
+
+
+            <div class="footer-section contact-info">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Street, New York, USA</p>
+                <p><i class="fas fa-envelope"></i> info@example.com</p>
+                <p><i class="fas fa-phone-alt"></i> +012 345 67890</p>
+                <p><i class="fas fa-print"></i> +012 345 67890</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://x.com/?lang=en-in&mx=2"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/sukesha-mahilash-7116392b1/"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="footer-bottom row">
+            <div class="col-12 text-center mt-3">
+                <h1>OSCAR COMPUTER EDUCATION</h1>
+                <h2>NAGERCOIL</h2>
+            </div>
+
+            <div class="col-12 d-flex align-items-center justify-content-center flex-column flex-md-row">
+
+                <div class="row g-0">
+                    <div class="col-md-4 text-center text-md-left" style="padding-left: 20px;">
+                        <img src="{% static 'images/shapes.png'%}" class="img-fluid img-right" alt="Shapes Image">
+
+                    </div>
+
+
+                    <div class="col-md-4 text-center text-md-left" style="margin-top: 100px;">
+                        <p class="single-line">DESIGNED BY: MR SUKESHA MAHILASH MS</p>
+
+                        <p>TRAINEDBY:MISS SANDTHIYA J</p>
+                    </div>
+
+                    <div class="col-md-4 text-center" style="margin-top: 100px;">
+                        <p>COURSE NAME: FULL STACK PYTHON</p>
+                       
+                        <p>WEBSITE NAME: CAR PLANET</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="col-12 text-center mt-3">
+            <p>© Your Site Name. All rights reserved.</p>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+        <script src="{% static 'js/js.js' %}"></script>
+
+
+</body>
+
+</html>
